@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head> 
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+     <title>Store Gunny | Phiên bản pro , chuyên nghiệp</title> 
+	 <meta name="keywords" content="gunny , gunny online , webshop online">
+	 <meta name="description" content="gunny , gunny online , webshop online">
+	 
+	  	 <link href="./media/css/jquery-ui-1.8.16.custom.css" media="screen" rel="stylesheet" type="text/css" />
+	 <link href="./media/css/colorbox.css" media="screen" rel="stylesheet" /> 
+	 <LINK REL="SHORTCUT ICON" HREF="favicon.ico" />
+	 <script src="./media/js/jquery.min.js"></script>
+	 <script src="./media/js/action.js"></script>
+	 <script src="./media/js/jquery-ui-1.8.16.custom.min.js"></script>
+	 <script src="./media/js/jquery.tooltip.js" type="text/javascript"></script>
+	 <script src="./media/js/jquery.colorbox.js"></script>
+	 <script src="./media/imagehelu/jquery_002.js" type="text/javascript"></script>
+	 <script src="./media/imagehelu/showimg.js" type="text/javascript"></script>
+          <script type="text/javascript" src="js/webtoolkit.md5.js"></script>
+
+	 <link href="./media/css/webshop_2010122303.css" media="screen" rel="stylesheet" type="text/css" />
+	 <link href="./media/css/sexybuttons.css" media="screen" rel="stylesheet" type="text/css" />
+	 
+	<link rel="stylesheet" href="./media/css/reset.css" type="text/css" media="screen" title="no title">
+	<link rel="stylesheet" href="./media/css/text.css" type="text/css" media="screen" title="no title">
+	<link rel="stylesheet" href="./media/css/layout.css" type="text/css" media="screen" title="no title">	
+
+	<link rel="stylesheet" href="./media/css/login.css" type="text/css" media="screen" title="no title">
+	
+	<link rel="stylesheet" href="./media/css/buttons.css" type="text/css" media="screen" title="no title">
+	<link rel="stylesheet" href="./media/css/form.css" type="text/css" media="screen" title="no title">
+	<link rel="stylesheet" href="./media/css/grid.css" type="text/css" media="screen" title="no title">	
+	<link rel="stylesheet" href="./media/css/mini-pricing-grid.css" type="text/css" media="screen" title="no title">	
+	<link rel="stylesheet" href="./media/css/uniform.css" type="text/css" media="screen" title="no title">
+	<link rel="stylesheet" href="./media/css/dataTables.css" type="text/css" media="screen" title="no title">
+	
+	<link rel="stylesheet" href="./media/css/style.css" type="text/css" media="screen" title="no title">
+	
+ 	<link rel="stylesheet" href="./media/css/custom.css" type="text/css" media="screen" title="no title">
+
+	<link href="./media/imagehelu/style.css" rel="stylesheet" type="text/css">	
+
+    <link href="./media/imagehelu/global.css" rel="stylesheet" type="text/css">
+    <link href="./media/imagehelu/feature-carousel.css" rel="stylesheet" type="text/css">
+    <script src="./media/imagehelu/jquery.featureCarousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+    
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+		usernamet = Get_Cookiex('username');
+			passwordt = Get_Cookiex('password');
+			$.get("/checkuser.ashx", { Page: "Login", username: usernamet, password: passwordt, login: 1 },
+	   	function(data){
+	   		if(data == "ok"){
+	   			window.location="/estore.aspx";
+	   		}
+		});
+      });
+    
+    </script>
+
+</head> 
+ 
+<body style="overflow: auto;" onLoad="khoidong();"> 
+
+	
+<div id="wrapper-main">
+  <div id="header">
+    <div id="logoControl"><a href="http://gun24h.us" name="top"></a></div>
+    <ul class="ls_regist">
+      <li><a target="_blank" href="http://gun24h.us">Trang chủ</a></li>
+      <li><a target="_blank" href="http://fb.com/gun24hus">Fanpage</a></li>
+	        <li><a target="_blank" href="http://play.gun24h.us">Chơi game</a></li>
+      <li><a target="_blank" href="http://taikhoan.gun24h.us">Tài khoản</a></li>
+          </ul>
+  </div>
+ 		<div class="menu-main">
+			<!-- Box Menu -->
+			
+			<ul id="menu-main-wrapper-sub">
+				
+								<li>|</li><li style="list-style-type:none"><a href="./" target="_self" title="Trang ch&#7911;">Trang ch&#7911;</a></li><li>|</li>
+				<li style="list-style-type:none"><a href="http://taikhoan.gun24h.us" rel="ajax">&#272;&#259;ng k&#253;</a></li><li>|</li>
+				<li style="list-style-type:none"><a href="http://taikhoan.gun24h.us" rel="ajax">Qu&#234;n m&#7853;t kh&#7849;u</a></li><li>|</li>
+								<div class="clear"></div>
+			</ul>
+			<!-- End Box Menu -->	
+		</div>
+  <div id="line_content">
+    <div id="content-wrapper">
+      <div id="container">		<div class="login_box" style="margin-top:45px;">
+		  <form id="form_login" method="POST" action="" onsubmit="return check_login()" autocomplete="off" name="login">
+          	<input name="login" value="login" type="hidden">
+			<h3 style="border:0;"><span><img src="./media/imagehelu/img_login.png" height="50" width="49"></span><span class="pad_T">Đăng nhập <span class="color_green">tài khoản</span></span>
+			  <div class="clear"></div>
+			</h3>
+			<input name="refer" value="" type="hidden">
+			<input name="t" value="" type="hidden">
+			<div class="txt_name">Tên đăng nhập</div>
+			<div class="bg_input">
+			  <input class="input_name" type="text" id="username" name="username" onfocus="if (this.value == 'Tài khoản'){this.value='';} hideErrorField('username'); hideErrorField('report')">
+			</div>
+			<div class="errors" style="padding-left:20px;max-height:5px;"><span id="username_error"></span>	</div>
+			<div class="txt_name">Mật khẩu</div>
+			<div class="bg_input">
+			  <input class="input_name" type="password" name="password" id="password" onfocus="if (this.value == 'password'){this.value='';} hideErrorField('password'); hideErrorField('report')">
+			</div>
+			<div class="errors"  style="padding-left:20px; max-height:5px;"><span id="password_error"></span></div>	
+			<div class="errors"  style="padding-left:20px;max-height:5px;"><span id="report_error"></span></div>
+			<div class="box_check">
+			  <input id="toggle-1" class="input_check" name="account_remember" type="checkbox">
+			  <label for="toggle-1" class="lbl_check">Nhớ mật khẩu</label>
+			  <div class="clear"></div>
+			</div>
+			<div class="btn_submit">
+			  <input class="input_submit" type="submit" name="Đăng nhập" id="Đăng nhập" value="Đăng nhập" OnClick="return Login();">
+			</div>
+			<div class="clear"></div>
+		  </form>
+		  <div class="info_regist">
+			<h3>trợ giúp</h3>
+			<div class="ls_regist">
+			  <ul style="list-style:none;">
+				<li style="list-style:none; margin-bottom:0;"><a href="#" target="_blank">Hướng dẫn tham gia!</a></li>
+				<li style="list-style:none; margin-bottom:0;"><a href="#Account_Manager/LostPass1" rel="ajax">Quên mật khẩu?</a></li>
+				<li style="list-style:none; margin-bottom:0;" class="regist_new"><a href="http://taikhoan.gun24h.us" rel="ajax" class="link_new">Đăng ký tài khoản</a></li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="clear"></div>
+		<div class="fb" style="margin-left:-23px; width:107%;">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgun24h.us&amp;width=500&amp;height=200&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:200px;" allowTransparency="true"></iframe>
+		</div> <!-- fb -->
+		
+		
+		</div><!-- /login_box -->
+		﻿<div id="Load_Content">
+		<div class="intro-p" style="width:470px; margin-top:40px;">
+					<table style="margin-top: 7px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tbody>
+						<tr>
+							<td colspan="2" style="text-align:left;"><p class="title_page">Giới thiệu</p></td>
+						</tr>
+						<tr>
+							<td valign="top"><img src="./media/imagehelu/ddtank.jpg" style="border: 1px solid #BFBFBF;background: none repeat scroll 0 0 #ECECEC;border-radius: 5px 5px 5px 5px;padding: 5px;margin-top: -3px;" /></td>
+							<td valign="top" style="vertical-align:top !important;">
+								<ul>
+									<li>Gunny Online là 1 trò chơi trực tuyến miễn phí đang dần trở thành một huyền thoại sống được game thủ tôn sùng.</li>
+									<li>Phát hành vào tháng 3/2011 và đã trở thành 1 tượng đài trong thị trường Gunny Online Private Việt Nam</li>
+									<li>Cập nhật những Phiên Bản Mới Nhất - Ổn định nhất và tạo sự an toàn cho các game thủ khi tham gia trò chơi.</li>
+									<li>M&#225;y ch&#7911; lu&#244;n th&#244;ng su&#7889;t 24/24 v&#224; &#273;&#7863;t t&#7841;i trung t&#226;m d&#7919; li&#7879;u l&#7899;n nh&#7845;t Vi&#7879;t Nam - VDC</li>
+									<li>H&#7895; tr&#7907; t&#7853;n t&#236;nh qua Yahoo, Hotline 24/24</li>
+								</ul>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+		</div> <!-- intro-p -->
+		<div class="carousel-container">
+		  <div id="carousel">
+		  	<div style="left: 181.5px; width: 105px; height: 52.5px; top: 70px; opacity: 0; z-index: 1;" class="carousel-feature"> <a target="_blank" href="#"><img style="width: 355px; height: 172.5px;" class="carousel-image" alt="HELU CHECKER" src="./media/imagehelu/helu_checker.png" height="105" width="210"></a> </div>
+
+			
+
+		  </div>
+		  <div id="carousel-left"><img src="./media/imagehelu/arrow-left.png"></div>
+		  <div id="carousel-right"><img src="./media/imagehelu/arrow-right.png"></div>
+		</div>
+			
+</div>      </div><!-- /container -->
+      <div class="clear"></div>
+    </div><!-- /content -->
+  </div>
+</div>
+<div id="footer">
+  <div class="cover_footer">
+    <div class="block">
+      <div class="left_block">
+        <p>
+	<a href="http://www.gun24h.us"><strong>Hệ thống trang quản lý tài khoản được quản lý bởi </strong></a><sup>© </sup>Team Việt</p>
+<p>
+	Phiên bản sử dụng: <a href="http://gun24h.us">Giáng sinh thần bí</a></p>
+<p>
+	Hotline: <a href="http://gun24h.us">09xxxxx</a></p>
+      </div>
+      <div class="right_block">
+      <p>
+	<strong>Đối tác:</strong></p>
+<ul class="nav_ls">
+	<li>
+		<a href="http://www.mobilegame.vn/" target="_blank"><img alt="www.mobilegame.vn" src="./media/imagehelu/mobile-game.png" style="width:73px;height: 35px;" align="absmiddle"></a></li>
+	<li>
+		<a href="http://www.tiepthigiadinh.com.vn/" target="_blank"><img alt="Báo Tiếp thị Gia đình" src="./media/imagehelu/tiep-thi-gia-dinh.png" style="width:105px;height: 33px;" align="absmiddle"></a></li>
+	<li>
+		<a href="http://vnwebmaster.com/" target="_blank"><img alt="vnwebmaster.com" src="./media/imagehelu/vnwebmaster.png" style="height: 35px;" align="absmiddle"></a></li>
+	<li>
+		<a href="http://www.onboom.com/" target="_blank"><img alt="vnwebmaster.com" src="./media/imagehelu/onboom.png" style="height: 35px;" align="absmiddle"></a></li>
+</ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+
+	<div id='dialog-message' title='Mu Hải Phòng Season 8.01 - Phiên bản Hoàng Kim Chiến Vũ' style='display: none'>
+			<div style='float:left; margin:0 7px 60px 0;'></div>
+			<div id='dialog-content'></div>
+	</div>
+</body></html>

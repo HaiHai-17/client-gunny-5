@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+
+.fl { float:left; }
+.fr { float:right; }
+
+
+/* Button Style */
+.btnwidth52 { width:52px; }
+.btnwidth56 { width:56px; }
+.btnwidth59 { width:59px; }
+.btnwidth86 { width:86px; }
+.btnwidth91 { width:91px; }
+.btnwidth95 { width:95px; }
+.btnwidth124 { width:124px; }
+.btnwidth155 { width:155px; }
+
+.defaultBtn { display:block; }
+	.defaultBtn:hover { text-decoration:none; }
+	.defaultBtn span { display:block; font-weight:bold; cursor:pointer; }
+
+.btstyle01 { height:22px; text-align:center; background: url('../images/btstyle01_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle01 span { height:19px; font-size:11px; color:#fff; padding-top:3px; background: url('../images/btstyle01_close.gif') right top no-repeat; }
+.btstyle02 { height:22px; text-align:center; background: url('../images/btstyle02_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle02 span { height:19px; font-size:11px; color:#fff; padding-top:3px; background: url('../images/btstyle02_close.gif') right top no-repeat; }
+.btstyle03 { height:22px; text-align:center; background: url('../images/btstyle03_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle03 span { height:19px; font-size:11px; color:#fff; padding-top:3px; background: url('../images/btstyle03_close.gif') right top no-repeat; }
+.btstyle04 { height:22px; text-align:center; background: url('../images/btstyle04_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle04 span { height:19px; font-size:11px; color:#fff; padding-top:3px; background: url('../images/btstyle04_close.gif') right top no-repeat; }
+
+.btstyle05 { height:18px; text-align:center; background: url('../images/btstyle05_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle05 span { height:16px; font-size:9px; color:#686868; padding-top:2px; background: url('../images/btstyle05_close.gif') right top no-repeat; }
+.btstyle06 { height:18px; text-align:center; background: url('../images/btstyle06_bg.html') left top no-repeat; text-decoration:none; }
+	.btstyle06 span { height:16px; font-size:9px; color:#686868; padding-top:2px; background: url('../images/btstyle06_close.html') right top no-repeat; }
+
+.btstyle07 { height:31px; text-align:center; background: url('../images/btstyle07_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle07 span { height:23px; font-size:12px; color:#fff; padding-top:8px; background: url('../images/btstyle07_close.gif') right top no-repeat; }
+.btstyle08 { height:31px; text-align:center; background: url('../images/btstyle08_bg.gif') left top no-repeat; text-decoration:none; }
+	.btstyle08 span { height:23px; font-size:12px; color:#fff; padding-top:8px; background: url('../images/btstyle08_close.gif') right top no-repeat; }
+
+	#CategoryList { width:645px; margin:0 auto; padding-bottom:25px; }
+		#CategoryList div.totaltxt { width:647px; font-weight:bold; font-size:11px; color:#686868; padding:28px 0 0 30px; }
+		#CategoryList div.itemListUline { background: url('../images/thumb_list_line.gif') center bottom repeat-x; }
+		#CategoryList div.itemList { width:645px; overflow:hidden; margin:-10px auto 0; padding-bottom:1px;}
+		#CategoryList div.itemList dl { width:154px; float:left; padding:11px 3px 9px 3px; margin-top:15px;}
+		#CategoryList div.itemList dl:hover { width:154px; float:left; border:3px solid #ff5f01; background-color:#fff8cf; padding:8px 0 6px; margin-top:15px; }
+		#CategoryList div.itemList dl.hover { width:154px; float:left; border:3px solid #ff5f01; background-color:#fff8cf; padding:8px 0 6px; margin-top:15px; }
+		#CategoryList div.itemList dl dt { position:relative; width:135px; margin:0 auto; padding:0 0 9px 0; }
+		#CategoryList div.itemList dl dt img { display:block; }
+		#CategoryList div.itemList dl dt img.Round { position:absolute; top:0px; left:0px; }
+		#CategoryList div.itemList dl dt img.TopTag { position:absolute; top:3px; left:3px; }
+		#CategoryList div.itemList dl dt img.BtmTag { position:absolute; bottom:10px; right:1px; }
+		#CategoryList div.itemList dl dt { width:135px; margin:0 auto; padding:0 0 9px 0; }
+		#CategoryList div.itemList dl dd { width:135px; margin:0 auto; text-align:center; line-height:14px; }
+		#CategoryList div.itemList dl dd span.itemname { font-size:11px; color:#686868; }
+		#CategoryList div.itemList dl dd span.itemcost { display:block; color:#323232; padding:8px 0 6px; }
+		#CategoryList div.itemList dl dd span.itemcost strong { color:#ff0000; }
+		#CategoryList div.itemList dl dd span.itemcost img { vertical-align:middle; }
+		#CategoryList div.itemList dl dd span.itemsale { display:block; color:#323232; }
+		#CategoryList div.itemList dl dd span.itemsale strike { display:block; color:#ff3232; }
+		#CategoryList div.itemList dl dd span.itemsale strike span { color:#686868; }
+		#CategoryList div.itemList dl dd span.itemsale strong { color:#ff0000; }
+		#CategoryList div.itemList dl dd span.itemsale img { vertical-align:middle; }
+		#CategoryList div.itemList dl dd div.buybtn { width:123px; margin:0 auto; padding:6px 38px 0; overflow:hidden; }
+		#CategoryList div.itemList dl dd div.saleinfo { color:#999; }
+
+		#CategoryList div.itemList dl:hover dd span.itemname { text-decoration:underline; }
+		#CategoryList div.itemList dl:hover dd span.itemcost { text-decoration:underline; }
+		#CategoryList div.itemList dl:hover dd span.itemcost strong { text-decoration:underline; }
+		#CategoryList div.itemList dl:hover dd span.itemsale { text-decoration:underline; }
+		#CategoryList div.itemList dl:hover dd div.saleinfo { text-decoration:underline; }
+		#CategoryList div.itemList dl.hover dd span.itemname { text-decoration:underline; }
+		#CategoryList div.itemList dl.hover dd span.itemcost { text-decoration:underline; }
+		#CategoryList div.itemList dl.hover dd span.itemcost strong { text-decoration:underline; }
+		#CategoryList div.itemList dl.hover dd span.itemsale { text-decoration:underline; }
+		#CategoryList div.itemList dl.hover dd div.saleinfo { text-decoration:underline; }
+	
+.DlLast{
+border-right:1px dashed #CCCCCC;
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+<Lang Name="Attack" value="Tấn công:"/>
+<Lang Name="Defence" value="Phòng thủ:"/>
+<Lang Name="Agility" value="Nhanh nhẹn:"/>
+<Lang Name="Luck" value="May mắn:"/>
+<Lang Name="StrenHP" value="Tăng cao "/>
+<Lang Name="male" value="Gới tính:  Nam"/>
+<Lang Name="female" value="Gới tính:  Nữ"/>
+<Lang Name="CanCompose" value="Có thể hợp thành"/>
+<Lang Name="CanStrengthen" value="Có thể cường hoá"/>
+</Root>

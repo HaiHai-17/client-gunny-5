@@ -1,0 +1,142 @@
+body {
+    font-size: 62.5%;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background:#f4f4f4 url(../images/bg.gif) repeat top left;
+}
+.style1 {
+	color: #454545;
+	font-size: 12px;
+	font-family: tahoma;
+	font-weight: bold;	
+}
+.style2 {
+	color: #454545;
+	font-size: 11px;
+	font-family: tahoma;
+	text-decoration:none
+}
+.style3 {
+	color: #798600;
+	font-size: 11px;
+	font-family: tahoma;
+}
+.style4 {
+	color: #828282;
+	font-size: 11px;
+	font-family: tahoma;
+	text-decoration:none
+}
+.style5 {
+	color: #6e6e6e;
+	font-size: 11px;
+	font-family: tahoma;
+	text-decoration:none
+}
+.style51 {
+	color: #ffffff;
+	font-size: 11px;
+	font-family: tahoma;
+	text-decoration:none
+}
+.style6 {
+	color: #c90000;
+	font-size: 11px;
+	font-family: tahoma;
+}
+.style7 {
+	color: #828282;
+	font-size: 12px;
+	font-family: tahoma;
+}
+.style8 {
+	color: #C90000;
+	font-size: 12px;
+	font-family: tahoma;
+}
+.style81 {
+	color: #009900;
+	font-size: 12px;
+	font-family: tahoma;
+}
+.style811 {
+	color: #c90000;
+	font-size: 12px;
+	font-family: tahoma;
+}
+.style9 {
+	color: #646464;
+	font-size: 11px;
+	font-family: tahoma;
+	font-weight: bold;
+	text-transform:uppercase
+}
+.style10 {
+	color: #009900;
+	font-size: 12px;
+	font-family: tahoma;
+    font-weight: bold;
+}
+
+#DynamicContent
+{    
+    z-index: 2000011;
+	background-color:#ffd800;
+	min-height:50px;
+	width:366px;
+	display:none;
+}
+
+#TB_overlayBG
+{
+	display:none;
+    position: fixed;
+	z-index:2001;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background-color:#000;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+	
+}
+
+#loading {
+				text-align: center;
+				font-size: 14px;
+				color:green;
+				padding-top: 10px;
+                padding-bottom: 10px;
+}
+
+#ErrorContent
+{    
+    z-index: 2000011;
+	background-color:#ffd800;
+	min-height:50px;
+	width:366px;
+	display:none;
+   font-size:20px;
+}
+
+#content {
+				text-align: center;
+				font-size: 14px;
+				color:green;
+				padding-top: 19px;
+}
+#codeContent
+{    
+    z-index: 200001;
+    padding-top: 10px;
+	background-color:#fff;
+	min-height:70px;
+	width:345px;
+	display:none;
+}
+#ReLoad{height:23px;width:25px;background:url(images/iconRe.gif) no-repeat;text-indent:-9999px;display:block;overflow:hidden;}
+          
